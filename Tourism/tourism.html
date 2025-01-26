@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism Department</title>
+    <link rel="stylesheet" href="tourism.css">
+</head>
+<body>
+    <header>
+        <h1>Explore Tourist Destinations</h1>
+        <input type="text" id="search-bar" placeholder="Search for destinations...">
+    </header>
+    <main>
+        <section id="destination-list" class="card-container">
+            <!-- Dynamic content will be injected here -->
+        </section>
+        <section id="favorites">
+            <h2>Your Favorites</h2>
+            <ul id="favorite-list">
+                <!-- Favorite destinations will be listed here -->
+            </ul>
+        </section>
+    </main>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div id="modal-body">
+                <!-- Destination details will be injected here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="tourism.js"></script>
+</body>
+</html>
+

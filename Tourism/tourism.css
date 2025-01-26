@@ -1,0 +1,144 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f0f0;
+}
+
+header {
+    background: linear-gradient(to right, #ea7407, #b90d75);
+    color: rgb(7, 5, 18);
+    padding: 20px;
+    text-align: center;
+}
+
+#search-bar {
+    padding: 10px;
+    width: 60%;
+    margin: 20px auto;
+    display: block;
+    border: 2px solid #d311a3;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#destination-list {
+    width: 65%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#favorites {
+    width: 30%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#favorites h2 {
+    margin-top: 0;
+    border-bottom: 2px solid #d311a3;
+    padding-bottom: 10px;
+}
+
+.destination, .favorite {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.destination:last-child, .favorite:last-child {
+    border-bottom: none;
+}
+
+button {
+    background: linear-gradient(to right, #ea7407, #b90d75);
+    color:  #000;
+    border: none;
+    padding: 8px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #a72d74;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.destination-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.destination-card h3 {
+    margin-top: 0;
+}
+
+.weather-info {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover, .close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.destination-image, .modal-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+}
